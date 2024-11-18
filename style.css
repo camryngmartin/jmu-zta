@@ -1,0 +1,112 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Button Component */
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4; 
+    color: white; 
+    text-transform: uppercase; 
+    font-weight: bold;
+    border: none;
+    border-radius: 5px; /
+    text-decoration: none; /* Remove underline for links */
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+    color: white; 
+}
+
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    height: 85vh;
+    background-image: url('img/hero.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    padding-top: 50px; 
+}
+
+/* Semi-transparent overlay for better text visibility */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 80%;
+    margin-top: 50px; 
+}
+
+/* Navbar Styling */
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: pink;
+}
+
+/* JMU Light Purple */
+.navbar-brand span {
+    color: #9370db;
+    font-weight: bold;
+}
+
+/* Section Styling: Light Pink Background with White Separators */
+.section {
+    background-color: #ffe4e1;
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.section h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Consistent Image Styling */
+img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+    border-radius: 5px; 
+    margin: 10px; 
+}
+
+/* Gallery Images Specific Styling */
+.gallery-carousel img {
+    width: auto; 
+    height: 400px; /* Set taller height */
+    object-fit: contain; 
+    margin: 10px auto; 
+    
+}
